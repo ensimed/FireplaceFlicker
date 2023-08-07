@@ -1,16 +1,16 @@
 using MSCLoader;
 using UnityEngine;
 
-namespace Fireplace_Flicker
+namespace FireplaceFlicker
 {
-    public class Fireplace_Flicker : Mod
+    public class FireplaceFlicker : Mod
     {
         private GameObject home_fireplace;
         private GameObject portable_grill;
         private GameObject cottage_grill;
         private GameObject cottage_fireplace;
         private GameObject cottage_sauna;
-        public override string ID => "Fireplace_Flicker";
+        public override string ID => "FireplaceFlicker";
         public override string Name => "Fireplace flicker";
         public override string Author => "ensimed";
         public override string Version => "1.0";
