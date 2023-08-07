@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace FireplaceFlicker
 {
-    public class PortableGrill : MonoBehaviour
+    public class CottageFireplace : MonoBehaviour
     {
         private Light FireplaceLight;
         private bool Flicker = false;
@@ -14,8 +14,8 @@ namespace FireplaceFlicker
 
         void Update()
         {
-            LightObject = GameObject.Find("ITEMS/grill(itemx)/Fireplace/Flame/FireEffects/Light");
-            FireplaceLight = GameObject.Find("ITEMS/grill(itemx)/Fireplace/Flame/FireEffects/Light").GetComponent<Light>();
+            LightObject = GameObject.Find("COTTAGE/Fireplace/Flame/FireEffects/Light");
+            FireplaceLight = GameObject.Find("COTTAGE/Fireplace/Flame/FireEffects/Light").GetComponent<Light>();
             FireplaceLight.shadows = LightShadows.Hard;
             if (Flicker == false && LightObject.activeSelf == true)
             {

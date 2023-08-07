@@ -1,11 +1,10 @@
 ﻿using MSCLoader;
 using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 
 namespace FireplaceFlicker
 {
-    public class PortableGrill : MonoBehaviour
+    public class CottageGrill : MonoBehaviour
     {
         private Light FireplaceLight;
         private bool Flicker = false;
@@ -14,8 +13,8 @@ namespace FireplaceFlicker
 
         void Update()
         {
-            LightObject = GameObject.Find("ITEMS/grill(itemx)/Fireplace/Flame/FireEffects/Light");
-            FireplaceLight = GameObject.Find("ITEMS/grill(itemx)/Fireplace/Flame/FireEffects/Light").GetComponent<Light>();
+            LightObject = GameObject.Find("COTTAGE/Grill/Fireplace/Flame/FireEffects/Light");
+            FireplaceLight = GameObject.Find("COTTAGE/Grill/Fireplace/Flame/FireEffects/Light").GetComponent<Light>();
             FireplaceLight.shadows = LightShadows.Hard;
             if (Flicker == false && LightObject.activeSelf == true)
             {

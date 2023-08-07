@@ -1,4 +1,4 @@
-using MSCLoader;
+﻿using MSCLoader;
 using UnityEngine;
 
 namespace FireplaceFlicker
